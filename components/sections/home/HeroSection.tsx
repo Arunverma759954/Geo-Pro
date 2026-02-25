@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-r from-rose-50 via-white to-slate-50 py-16 sm:py-20">
+    <section className="relative overflow-hidden bg-gradient-to-r from-rose-50 via-white to-slate-50 py-10 sm:py-16 lg:py-20">
       <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-red-100/70 via-transparent to-transparent pointer-events-none" />
 
-      <div className="relative mx-auto flex max-w-[1200px] flex-col gap-12 px-6 md:flex-row md:items-center md:gap-16 md:px-10">
+      <div className="relative mx-auto flex max-w-[1200px] flex-col gap-8 px-4 sm:gap-12 sm:px-6 md:flex-row md:items-center md:gap-16 md:px-10">
         {/* Left: content */}
-        <div className="max-w-xl space-y-6">
+        <div className="min-w-0 max-w-xl space-y-5 sm:space-y-6">
           <p className="text-xs font-semibold tracking-[0.28em] text-red-700 uppercase">
             GEODECISION ANALYTICS
           </p>
@@ -36,7 +36,7 @@ export default function HeroSection() {
             </button>
           </div>
 
-          <div className="mt-6 grid gap-4 text-sm text-slate-700 sm:grid-cols-3">
+          <div className="mt-4 grid gap-3 text-sm text-slate-700 sm:mt-6 sm:gap-4 sm:grid-cols-3">
             <div>
               <p className="font-semibold text-slate-900">Spatial analytics</p>
               <p className="text-xs sm:text-[13px]">
@@ -59,9 +59,9 @@ export default function HeroSection() {
         </div>
 
         {/* Right: image */}
-        <div className="relative flex-1">
-          <div className="relative overflow-hidden rounded-3xl border border-rose-100 bg-white shadow-xl">
-            <div className="relative aspect-[16/7] sm:aspect-[16/6]">
+        <div className="relative min-w-0 flex-1">
+          <div className="relative overflow-hidden rounded-2xl border border-rose-100 bg-white shadow-xl sm:rounded-3xl">
+            <div className="relative aspect-[16/8] sm:aspect-[16/7] lg:aspect-[16/6]">
               <Image
                 src="/gis.webp"
                 alt="GeoDecision Analytics hero"

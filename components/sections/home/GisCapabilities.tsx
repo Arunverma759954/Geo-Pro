@@ -33,34 +33,34 @@ export default function GisCapabilities() {
     ];
 
     return (
-        <section className="relative overflow-hidden py-12">
+        <section className="relative overflow-hidden py-8 sm:py-12">
             {/* Background Decorations */}
             <div className="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-teal-50 blur-[120px] opacity-60" />
             <div className="absolute top-1/2 -right-24 h-[500px] w-[500px] rounded-full bg-blue-50 blur-[150px] opacity-40" />
 
-            <div className="relative space-y-24">
+            <div className="relative space-y-12 sm:space-y-16 lg:space-y-24">
                 {/* Header Section */}
-                <div className="max-w-4xl space-y-8">
-                    <div className="space-y-4">
-                        <div className="flex items-center gap-4">
-                            <span className="h-0.5 w-12 bg-teal-500 rounded-full" />
-                            <p className="text-sm font-bold tracking-[0.3em] text-teal-600 uppercase">
+                <div className="max-w-4xl space-y-4 sm:space-y-6 md:space-y-8">
+                    <div className="space-y-3 sm:space-y-4">
+                        <div className="flex items-center gap-3 sm:gap-4">
+                            <span className="h-0.5 w-8 bg-red-500 rounded-full sm:w-12" />
+                            <p className="text-xs font-bold tracking-[0.25em] text-red-600 uppercase sm:text-sm sm:tracking-[0.3em]">
                                 Technology Stack
                             </p>
                         </div>
-                        <h2 className="text-xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-4xl leading-[1.1]">
-                            Advanced <span className="text-teal-600">GIS & Spatial</span>{" "}
+                        <h2 className="text-2xl font-extrabold tracking-tight text-slate-900 leading-[1.1] sm:text-3xl lg:text-4xl">
+                            Advanced <span className="text-red-600">GIS & Spatial</span>{" "}
                             Capabilities
                         </h2>
                     </div>
-                    <div className="grid gap-8 md:grid-cols-2">
-                        <p className="text-lg leading-relaxed text-slate-600">
+                    <div className="grid gap-4 sm:gap-6 md:grid-cols-2 md:gap-8">
+                        <p className="text-base leading-relaxed text-slate-600 sm:text-lg">
                             We leverage industry-leading GIS platforms, spatial databases, and
                             APIs to deliver robust geospatial solutions. Our technology stack
                             is built for scalability, precision, and real-time decision
                             support.
                         </p>
-                        <p className="text-lg leading-relaxed text-slate-600">
+                        <p className="text-base leading-relaxed text-slate-600 sm:text-lg">
                             From data ingestion to spatial modeling and interactive map
                             services, our platform integrates all the tools you need to turn
                             location data into actionable intelligence.
@@ -69,28 +69,28 @@ export default function GisCapabilities() {
                 </div>
 
                 {/* Capabilities Layers */}
-                <div className="space-y-32">
+                <div className="space-y-16 sm:space-y-24 lg:space-y-32">
                     {capabilities.map((cap, index) => (
                         <div
                             key={index}
-                            className={`group relative grid items-center gap-12 lg:grid-cols-12 ${index % 2 === 1 ? "lg:direction-rtl" : ""
+                            className={`group relative grid items-center gap-6 sm:gap-8 lg:grid-cols-12 lg:gap-12 ${index % 2 === 1 ? "lg:direction-rtl" : ""
                                 }`}
                         >
                             {/* Content Side */}
                             <div
-                                className={`lg:col-span-5 space-y-8 ${index % 2 === 1 ? "lg:order-2" : "lg:order-1"
+                                className={`min-w-0 lg:col-span-5 space-y-4 sm:space-y-6 lg:space-y-8 ${index % 2 === 1 ? "lg:order-2" : "lg:order-1"
                                     }`}
                             >
                                 <div className="space-y-6">
                                     <div className="inline-block transform transition-transform group-hover:-translate-y-1">
-                                        <span className="rounded-full bg-teal-50 px-4 py-1.5 text-xs font-bold text-teal-600 uppercase tracking-wider border border-teal-100/50">
+                                        <span className="rounded-full bg-teal-50 px-4 py-1.5 text-xs font-bold text-red-600 uppercase tracking-wider border border-teal-100/50">
                                             {cap.tag}
                                         </span>
                                     </div>
-                                    <h3 className="text-3xl font-bold text-slate-900 group-hover:text-teal-700 transition-colors">
+                                    <h3 className="text-xl font-bold text-slate-900 transition-colors group-hover:text-red-700 sm:text-2xl lg:text-3xl">
                                         {cap.title}
                                     </h3>
-                                    <p className="text-lg leading-relaxed text-slate-600">
+                                    <p className="text-base leading-relaxed text-slate-600 sm:text-lg">
                                         {cap.description}
                                     </p>
                                 </div>
@@ -115,13 +115,13 @@ export default function GisCapabilities() {
 
                             {/* Image Side */}
                             <div
-                                className={`lg:col-span-7 relative ${index % 2 === 1 ? "lg:order-1" : "lg:order-2"
+                                className={`relative min-w-0 lg:col-span-7 ${index % 2 === 1 ? "lg:order-1" : "lg:order-2"
                                     }`}
                             >
                                 {/* Image & decorative elements */}
-                                <div className="absolute -inset-4 rounded-[40px] bg-slate-100/50 blur-2xl -z-10 group-hover:bg-teal-50/50 transition-colors" />
+                                <div className="absolute -inset-2 rounded-2xl bg-slate-100/50 blur-2xl -z-10 transition-colors group-hover:bg-teal-50/50 sm:-inset-4 sm:rounded-[40px]" />
 
-                                <div className="relative overflow-hidden rounded-[32px] border-[8px] border-white shadow-2xl transition-all duration-500 group-hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] group-hover:-translate-y-2">
+                                <div className="relative overflow-hidden rounded-2xl border-4 border-white shadow-2xl transition-all duration-500 group-hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] sm:rounded-[32px] sm:border-[8px] lg:group-hover:-translate-y-2">
                                     <div className="aspect-[16/10] relative">
                                         <Image
                                             src={cap.image}

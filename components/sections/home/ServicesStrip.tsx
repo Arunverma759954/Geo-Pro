@@ -1,6 +1,6 @@
 export default function ServicesStrip() {
   return (
-    <section className="grid gap-6 rounded-2xl border border-red-100 bg-white p-6 shadow-sm md:grid-cols-3">
+    <section className="grid gap-4 rounded-2xl border border-red-100 bg-white p-4 shadow-sm sm:gap-6 sm:p-6 md:grid-cols-3">
       <div>
         <h3 className="text-sm font-semibold text-slate-900">
           GeoSpatial Consulting

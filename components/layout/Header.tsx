@@ -22,21 +22,21 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-100 bg-white/90 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-2.5 md:gap-6 md:px-6">
-        <div className="flex items-center gap-3">
+      <div className="mx-auto flex max-w-[1440px] items-center gap-3 px-4 py-2.5 sm:gap-4 md:gap-6 md:px-6 lg:px-10">
+        <div className="flex min-w-0 flex-shrink-0 items-center gap-2 sm:gap-3">
           <Image
             src="/logo.jpg"
             alt="GeoDecision Analytics logo"
             width={80}
             height={80}
-            className="h-12 w-auto object-contain"
+            className="h-9 w-auto object-contain md:h-12"
             priority
           />
-          <div className="leading-tight">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-red-700">
+          <div className="min-w-0 leading-tight">
+            <p className="truncate text-[10px] font-semibold uppercase tracking-[0.2em] text-red-700 sm:text-[11px] sm:tracking-[0.25em]">
               GeoDecision Analytics
             </p>
-            <p className="text-[11px] text-slate-500">
+            <p className="hidden text-[11px] text-slate-500 sm:block">
               Transforming Spatial Data into Confident Decisions
             </p>
           </div>
@@ -117,7 +117,7 @@ export default function Header() {
 
       {isOpen && (
         <div className="border-t border-slate-100 bg-white/95 shadow-sm md:hidden">
-          <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 text-sm font-medium text-slate-700">
+          <nav className="mx-auto flex max-w-[1440px] flex-col gap-1 px-4 py-3 text-sm font-medium text-slate-700 lg:px-10">
             {navItems.map((item) => {
               const isActive =
                 item.href === "/"
@@ -128,7 +128,7 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`flex items-center justify-between rounded-lg px-2 py-2 transition-colors ${
+                  className={`flex items-center justify-between rounded-lg px-3 py-2.5 transition-colors ${
                     isActive
                       ? "bg-red-50 text-red-700"
                       : "hover:bg-slate-50 hover:text-slate-900"
@@ -147,6 +147,12 @@ export default function Header() {
             >
               Call us: +91-98765-43210
             </a>
+            <Link
+              href="/contact"
+              className="mt-2 inline-flex items-center justify-center rounded-full bg-red-700 px-4 py-2.5 text-sm font-semibold text-white"
+            >
+              Get in touch
+            </Link>
           </nav>
         </div>
       )}

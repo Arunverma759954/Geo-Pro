@@ -5,7 +5,7 @@ import ServicesStrip from "@/components/sections/home/ServicesStrip";
 
 export default function Home() {
   return (
-    <div className="mx-auto flex max-w-[1440px] flex-col gap-24 px-6 py-12 md:px-10 md:py-20">
+    <div className="mx-auto flex max-w-[1440px] flex-col gap-12 px-4 py-8 sm:gap-16 sm:px-6 sm:py-12 md:gap-24 md:px-10 md:py-20">
       <HeroSection />
       <GisCapabilities />
       <HomeServicesHero />

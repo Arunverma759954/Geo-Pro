@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f3f4f6; /* slate-100 */
+  --background: #fafafa; /* lighter off-white */
   --foreground: #020617; /* slate-950 */
   --primary: #b5091c; /* deeper red to match logo */
   --primary-soft: #fee2e2;
@@ -24,8 +24,8 @@ body {
 .bg-page {
   background: radial-gradient(
     circle at top left,
-    #fecaca 0,
-    #e5e7eb 45%,
-    #f3f4f6 100%
+    #fef2f2 0,
+    #f8fafc 40%,
+    #fafafa 100%
   );
 }

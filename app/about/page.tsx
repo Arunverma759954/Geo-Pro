@@ -6,11 +6,11 @@ import TimelineStrip from "@/components/sections/about/TimelineStrip";
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto flex max-w-[1440px] flex-col gap-16 px-6 py-12 md:px-10 md:py-20">
+    <div className="mx-auto flex max-w-[1440px] flex-col gap-10 px-4 py-8 sm:gap-12 sm:px-6 sm:py-12 md:gap-16 md:px-10 md:py-20">
       {/* Heading + intro */}
-      <section className="grid gap-10 md:grid-cols-[1.3fr_minmax(0,1fr)] md:items-start">
-        <div className="space-y-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-teal-600">
+      <section className="grid gap-6 sm:gap-8 md:grid-cols-[1.3fr_minmax(0,1fr)] md:gap-10 md:items-start">
+        <div className="min-w-0 space-y-6">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-red-600">
             Who we are
           </p>
           <div className="space-y-3">
@@ -26,14 +26,14 @@ export default function AboutPage() {
 
           <ul className="space-y-4 text-sm sm:text-base text-slate-700">
             <li className="flex gap-3">
-              <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-teal-500" />
+              <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-red-500" />
               <p>
                 <span className="font-semibold">20+ Years of GIS Expertise</span>{" "}
                 – Deep knowledge of geospatial technologies and best practices.
               </p>
             </li>
             <li className="flex gap-3">
-              <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-teal-500" />
+              <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-red-500" />
               <p>
                 <span className="font-semibold">Diverse Portfolio</span> – Successfully
                 delivered GIS solutions across planning, logistics, environmental, and
@@ -41,7 +41,7 @@ export default function AboutPage() {
               </p>
             </li>
             <li className="flex gap-3">
-              <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-teal-500" />
+              <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-red-500" />
               <p>
                 <span className="font-semibold">Decision–Focused</span> – Every solution
                 is designed to turn complex spatial data into clear, actionable
@@ -52,7 +52,7 @@ export default function AboutPage() {
         </div>
 
         {/* Side image card */}
-        <aside className="relative">
+        <aside className="relative min-w-0">
           <div className="pointer-events-none absolute -top-10 -right-10 h-40 w-40 rounded-full bg-teal-100/60 blur-3xl" />
           <div className="relative overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-xl">
             <div className="relative aspect-[4/3]">
@@ -68,7 +68,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values / mission strip */}
-      <section className="rounded-3xl border border-slate-100 bg-slate-50/70 px-6 py-6 sm:px-8 sm:py-8">
+      <section className="rounded-2xl border border-slate-100 bg-slate-50/70 px-4 py-5 sm:rounded-3xl sm:px-6 sm:py-6 md:px-8 md:py-8">
         <div className="grid gap-6 sm:grid-cols-3">
           <div>
             <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
