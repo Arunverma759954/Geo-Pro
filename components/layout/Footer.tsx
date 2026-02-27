@@ -23,7 +23,7 @@ export default function Footer() {
                 />
               </div>
               <div className="space-y-1">
-                <p className="text-sm font-black uppercase tracking-[0.3em] text-white">
+                <p className="text-sm font-black tracking-[0.3em] text-white">
                   GeoDecision Analytics
                 </p>
                 <p className="text-xs text-[#c40902] font-bold uppercase tracking-widest">

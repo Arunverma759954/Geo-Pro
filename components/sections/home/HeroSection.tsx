@@ -15,8 +15,8 @@ export default function HeroSection() {
           <div className="space-y-8 sm:space-y-10">
             <Reveal direction="left" delay={0.2}>
               <div className="space-y-4">
-                <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20">
-                  GEODECISION ANALYTICS
+                <p className="inline-block text-[10px] font-black tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20">
+                  GeoDecision Analytics
                 </p>
                 <h1 className="text-2xl font-black tracking-tight text-white sm:text-3xl lg:text-4xl leading-[1.1]">
                   Transforming Spatial Data into{" "}

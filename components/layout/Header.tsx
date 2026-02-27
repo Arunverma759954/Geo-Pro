@@ -35,7 +35,7 @@ export default function Header() {
             />
           </div>
           <div className="min-w-0 leading-tight">
-            <p className="truncate text-[10px] font-black uppercase tracking-[0.4em] text-[#c40902] sm:text-[12px]">
+            <p className="truncate text-[10px] font-black tracking-[0.4em] text-[#c40902] sm:text-[12px]">
               GeoDecision Analytics
             </p>
             <p className="hidden text-[11px] text-slate-400 font-bold sm:block opacity-60 tracking-wider">
