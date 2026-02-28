@@ -4,7 +4,7 @@ export default function AboutHero() {
   return (
     <section className="grid gap-10 md:grid-cols-[3fr,2fr] md:items-center">
       <div className="space-y-5">
-        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-red-700">
+        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-green-700">
           About Us
         </p>
         <h1 className="text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
@@ -21,7 +21,7 @@ export default function AboutHero() {
         </p>
       </div>
 
-      <div className="relative overflow-hidden rounded-2xl border border-red-100 bg-linear-to-br from-red-50 via-white to-slate-50 p-6 shadow-sm">
+      <div className="relative overflow-hidden rounded-2xl border border-green-100 bg-linear-to-br from-green-50 via-white to-slate-50 p-6 shadow-sm">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(248,113,113,0.25),transparent_60%)]" />
         <div className="relative flex h-full flex-col justify-between gap-6">
           <div className="flex items-center gap-3">
@@ -34,7 +34,7 @@ export default function AboutHero() {
               />
             </div>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-red-700">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-green-700">
                 GeoSpatial Expertise
               </p>
               <p className="text-xs text-slate-500">

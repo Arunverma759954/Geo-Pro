@@ -34,28 +34,28 @@ export default function GisCapabilities() {
     ];
 
     return (
-        <section className="relative overflow-hidden py-16 sm:py-24 md:py-32 bg-white">
+        <section className="relative overflow-hidden py-16 sm:py-24 md:py-32 bg-[#0f172a]">
             <div className="mx-auto max-w-[1700px] px-4 sm:px-6 lg:px-12 md:px-8 relative space-y-16 lg:space-y-24">
                 {/* Header Section */}
                 <Reveal direction="left" width="100%">
                     <div className="max-w-4xl space-y-6">
                         <div className="space-y-4">
-                            <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20">
+                            <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-white bg-[#16a34a] px-4 py-1.5 rounded-full border border-[#16a34a]/20">
                                 Technology Stack
                             </p>
-                            <h2 className="text-2xl font-black tracking-tight text-slate-900 leading-[1.1] sm:text-3xl lg:text-4xl">
-                                Advanced <span className="text-[#c40902]">GIS & Spatial</span>{" "}
+                            <h2 className="text-2xl font-black tracking-tight text-white leading-[1.1] sm:text-3xl lg:text-4xl">
+                                Advanced <span className="text-[#16a34a]">GIS & Spatial</span>{" "}
                                 Capabilities
                             </h2>
                         </div>
                         <div className="grid gap-6 md:grid-cols-2">
-                            <p className="text-lg leading-relaxed text-slate-800 font-bold">
+                            <p className="text-lg leading-relaxed text-slate-300 font-bold">
                                 We leverage industry-leading GIS platforms, spatial databases, and
                                 APIs to deliver robust geospatial solutions. Our technology stack
                                 is built for scalability, precision, and real-time decision
                                 support.
                             </p>
-                            <p className="text-lg leading-relaxed text-slate-600 font-bold">
+                            <p className="text-lg leading-relaxed text-slate-400 font-bold">
                                 From data ingestion to spatial modeling and interactive map
                                 services, our platform integrates all the tools you need to turn
                                 location data into actionable intelligence.
@@ -78,17 +78,17 @@ export default function GisCapabilities() {
                             >
                                 <Reveal direction={index % 2 === 1 ? "right" : "left"} width="100%">
                                     <div className="space-y-6">
-                                        <span className="rounded-full bg-[#c40902]/10 px-4 py-1.5 text-[10px] font-black text-[#c40902] uppercase tracking-[0.4em] border border-[#c40902]/20">
+                                        <span className="rounded-full bg-[#16a34a]/20 px-4 py-1.5 text-[10px] font-black text-[#4ade80] uppercase tracking-[0.4em] border border-[#16a34a]/30">
                                             {cap.tag}
                                         </span>
-                                        <h3 className="text-2xl font-black text-slate-900 transition-colors group-hover:text-[#c40902]">
+                                        <h3 className="text-2xl font-black text-white transition-colors group-hover:text-[#16a34a]">
                                             {cap.title}
                                         </h3>
-                                        <p className="text-lg leading-relaxed text-slate-700 font-bold group-hover:text-slate-900 transition-colors">
+                                        <p className="text-lg leading-relaxed text-slate-300 font-bold group-hover:text-slate-200 transition-colors">
                                             {cap.description}
                                         </p>
 
-                                        <button className="group/btn flex items-center gap-3 rounded-full bg-slate-900 px-8 py-3.5 text-sm font-bold text-white transition-all hover:bg-slate-800 hover:shadow-lg cursor-pointer">
+                                        <button className="group/btn flex items-center gap-3 rounded-full bg-[#16a34a] px-8 py-3.5 text-sm font-bold text-white transition-all hover:bg-[#15803d] hover:shadow-[0_0_20px_rgba(22,163,74,0.3)] cursor-pointer">
                                             Contact Specialist
                                             <svg
                                                 className="h-4 w-4 transition-transform group-hover/btn:translate-x-1"
@@ -116,7 +116,7 @@ export default function GisCapabilities() {
                                 <Reveal direction={index % 2 === 1 ? "left" : "right"} width="100%">
                                     <div className="relative">
                                         {/* Background glow for cards - Red */}
-                                        <div className="absolute -inset-4 rounded-[40px] bg-[#c40902]/5 blur-3xl -z-10 group-hover:bg-[#c40902]/10 transition-all duration-500" />
+                                        <div className="absolute -inset-4 rounded-[40px] bg-[#16a34a]/5 blur-3xl -z-10 group-hover:bg-[#16a34a]/10 transition-all duration-500" />
 
                                         <div className="relative overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-2xl transition-all duration-500 lg:group-hover:-translate-y-2">
                                             <div className="aspect-[16/10] relative">

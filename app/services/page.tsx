@@ -65,7 +65,7 @@ export default function ServicesPage() {
           <div className="relative z-10 max-w-4xl space-y-8">
             <Reveal direction="left" delay={0.4}>
               <div className="space-y-4">
-                <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20">
+                <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#16a34a] bg-[#16a34a]/10 px-4 py-1.5 rounded-full border border-[#16a34a]/20">
                   Our Services
                 </p>
                 <h1 className="text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl leading-[1.1]">
@@ -87,7 +87,7 @@ export default function ServicesPage() {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service, idx) => (
             <Reveal key={idx} direction={idx % 2 === 0 ? "left" : "right"} delay={idx * 0.1} className="h-full">
-              <div className="group relative flex flex-col h-full overflow-hidden rounded-[2rem] border border-slate-100 bg-white shadow-xl transition-all duration-500 hover:shadow-2xl hover:border-[#c40902]/20 hover:-translate-y-2">
+              <div className="group relative flex flex-col h-full overflow-hidden rounded-[2rem] border border-slate-100 bg-white shadow-xl transition-all duration-500 hover:shadow-2xl hover:border-[#16a34a]/20 hover:-translate-y-2">
                 <div className="relative aspect-square w-full overflow-hidden">
                   <Image
                     src={service.image}
@@ -106,7 +106,7 @@ export default function ServicesPage() {
                     <ul className="space-y-3">
                       {service.bullets.map((bullet, i) => (
                         <li key={i} className="flex items-center gap-3 text-sm text-slate-700 font-bold tracking-tight">
-                          <span className="h-2 w-2 rounded-full bg-[#c40902] shadow-[0_0_8px_rgba(196,9,2,0.4)] flex-shrink-0" />
+                          <span className="h-2 w-2 rounded-full bg-[#16a34a] shadow-[0_0_8px_rgba(22,163,74,0.4)] flex-shrink-0" />
                           {bullet}
                         </li>
                       ))}
@@ -135,11 +135,11 @@ export default function ServicesPage() {
               {methodology.map((item, idx) => (
                 <Reveal key={idx} direction="up" delay={idx * 0.1} className="h-full">
                   <div className="relative h-full space-y-6 group">
-                    <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-white border-2 border-slate-100 text-slate-900 font-black text-xl shadow-lg group-hover:bg-[#c40902] group-hover:text-white group-hover:border-[#c40902] transition-all mx-auto lg:mx-0">
+                    <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-white border-2 border-slate-100 text-slate-900 font-black text-xl shadow-lg group-hover:bg-[#16a34a] group-hover:text-white group-hover:border-[#16a34a] transition-all mx-auto lg:mx-0">
                       {idx + 1}
                     </div>
                     <div className="space-y-3 text-center lg:text-left">
-                      <h4 className="font-black text-slate-900 text-lg leading-tight transition-colors group-hover:text-[#c40902]">{item.step}</h4>
+                      <h4 className="font-black text-slate-900 text-lg leading-tight transition-colors group-hover:text-[#16a34a]">{item.step}</h4>
                       <p className="text-sm text-slate-500 font-bold leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
@@ -148,7 +148,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="p-8 rounded-[2rem] bg-white border border-slate-100 text-center shadow-xl">
-              <p className="text-[#c40902] font-black tracking-widest uppercase text-xs italic">Reduced Uncertainty • Strengthened Decisions • Defensible Outcomes</p>
+              <p className="text-[#16a34a] font-black tracking-widest uppercase text-xs italic">Reduced Uncertainty • Strengthened Decisions • Defensible Outcomes</p>
             </div>
           </div>
         </section>
@@ -159,7 +159,7 @@ export default function ServicesPage() {
         <Reveal direction="left" width="100%">
           <div className="space-y-8">
             <div className="space-y-4">
-              <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20">
+              <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#16a34a] bg-[#16a34a]/10 px-4 py-1.5 rounded-full border border-[#16a34a]/20">
                 Tools & Engineering
               </p>
               <h2 className="text-2xl font-black text-slate-900 sm:text-3xl lg:text-4xl leading-tight">Platforms & Technical Capability</h2>
@@ -170,8 +170,8 @@ export default function ServicesPage() {
             <div className="grid gap-4 sm:grid-cols-2">
               {capabilities.map((cap, idx) => (
                 <Reveal key={idx} direction="up" delay={idx * 0.1} className="h-full">
-                  <div className="flex items-center h-full gap-3 p-5 rounded-2xl border border-slate-100 bg-white shadow-sm group hover:border-[#c40902]/30 hover:shadow-md transition-all">
-                    <div className="h-2 w-2 rounded-full bg-[#c40902] group-hover:scale-150 transition-all" />
+                  <div className="flex items-center h-full gap-3 p-5 rounded-2xl border border-slate-100 bg-white shadow-sm group hover:border-[#16a34a]/30 hover:shadow-md transition-all">
+                    <div className="h-2 w-2 rounded-full bg-[#16a34a] group-hover:scale-150 transition-all" />
                     <p className="text-sm font-black text-slate-800 group-hover:text-slate-950 transition-colors">{cap}</p>
                   </div>
                 </Reveal>
@@ -190,7 +190,7 @@ export default function ServicesPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
             <div className="absolute bottom-8 left-8 right-8 p-8 bg-white/90 backdrop-blur-xl rounded-[2rem] shadow-xl border border-white/20">
-              <p className="text-[10px] font-black text-[#c40902] uppercase tracking-[0.3em] mb-2 leading-none">STRATEGIC ALIGNMENT</p>
+              <p className="text-[10px] font-black text-[#16a34a] uppercase tracking-[0.3em] mb-2 leading-none">STRATEGIC ALIGNMENT</p>
               <p className="text-slate-900 text-lg font-black leading-tight mb-2">Operational Excellence</p>
               <p className="text-slate-600 text-sm font-bold leading-relaxed">Advanced geospatial platforms integrated with structured analytical methodologies.</p>
             </div>
@@ -208,7 +208,7 @@ export default function ServicesPage() {
           <div className="flex justify-center flex-wrap gap-4">
             <Link
               href="/contact"
-              className="rounded-full bg-[#c40902] px-12 py-5 text-sm font-black text-white shadow-xl transition-all hover:bg-[#a30702] hover:scale-105"
+              className="rounded-full bg-[#16a34a] px-12 py-5 text-sm font-black text-white shadow-xl transition-all hover:bg-[#166534] hover:scale-105"
             >
               Request Full Capability Statement
             </Link>

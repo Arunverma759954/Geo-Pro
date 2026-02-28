@@ -16,7 +16,7 @@ export default function ServicesStrip() {
             desc: "Capability-building programs so your teams can confidently use geospatial tools and outputs."
           }
         ].map((service, i) => (
-          <div key={i} className="p-8 rounded-2xl bg-white border-2 border-slate-100 transition-all hover:shadow-2xl hover:border-[#c40902]/20 cursor-pointer">
+          <div key={i} className="p-8 rounded-2xl bg-white border-2 border-slate-100 transition-all hover:shadow-2xl hover:border-[#16a34a]/20 cursor-pointer">
             <h3 className="text-xl font-black text-slate-900 mb-3">
               {service.title}
             </h3>

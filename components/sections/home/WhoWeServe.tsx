@@ -48,18 +48,18 @@ export default function WhoWeServe() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-white py-20 md:py-32">
+    <section className="relative overflow-hidden bg-slate-900 py-20 md:py-32">
       <div className="mx-auto max-w-[1700px] px-4 sm:px-6 lg:px-12 md:px-8 relative z-10 space-y-12 sm:space-y-16">
         <Reveal direction="up" width="100%">
           <header className="space-y-4 text-center max-w-3xl mx-auto">
-            <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20">
+            <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-white bg-[#16a34a] px-4 py-1.5 rounded-full border border-[#16a34a]/20">
               Who We Serve
             </p>
             <div className="max-w-3xl space-y-6 mx-auto">
-              <h2 className="text-2xl font-black tracking-tight text-slate-900 sm:text-3xl lg:text-4xl leading-tight">
+              <h2 className="text-2xl font-black tracking-tight text-white sm:text-3xl lg:text-4xl leading-tight">
                 Empowering Decision-Makers Across Every Sector
               </h2>
-              <p className="text-lg text-slate-700 font-bold leading-relaxed max-w-2xl mx-auto">
+              <p className="text-lg text-slate-300 font-bold leading-relaxed max-w-2xl mx-auto">
                 We leverage geospatial intelligence to solve complex spatial challenges, reducing risk and accelerating operational results for our partners.
               </p>
             </div>
@@ -76,7 +76,7 @@ export default function WhoWeServe() {
               className="h-full"
             >
               <div
-                className="group flex flex-col h-full overflow-hidden rounded-2xl border-2 border-slate-100 bg-white transition-all duration-300 hover:border-[#c40902]/30 hover:shadow-2xl hover:translate-y-[-4px] cursor-pointer"
+                className="group flex flex-col h-full overflow-hidden rounded-2xl border-2 border-slate-700 bg-slate-800 transition-all duration-300 hover:border-[#16a34a]/50 hover:shadow-2xl hover:translate-y-[-4px] cursor-pointer"
               >
                 <div className="relative h-48 w-full overflow-hidden">
                   <Image
@@ -87,22 +87,22 @@ export default function WhoWeServe() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent opacity-60" />
                   <div className="absolute bottom-4 left-4">
-                    <h3 className="text-lg font-black text-white group-hover:text-[#c40902] transition-colors">
+                    <h3 className="text-lg font-black text-white group-hover:text-[#16a34a] transition-colors">
                       {item.title}
                     </h3>
                   </div>
                 </div>
 
                 <div className="flex flex-1 flex-col p-6 space-y-4">
-                  <p className="text-sm leading-relaxed text-slate-600 font-medium">
+                  <p className="text-sm leading-relaxed text-slate-300 font-medium">
                     {item.description}
                   </p>
 
                   {item.bullets && (
-                    <ul className="grid gap-2 text-xs text-slate-500 border-t border-slate-100 pt-4">
+                    <ul className="grid gap-2 text-xs text-slate-400 border-t border-slate-700 pt-4">
                       {item.bullets.map((bullet, bIdx) => (
                         <li key={bIdx} className="flex items-start gap-2">
-                          <span className="text-[#c40902] font-black leading-none">✔</span>
+                          <span className="text-[#16a34a] font-black leading-none">✔</span>
                           <span>{bullet}</span>
                         </li>
                       ))}

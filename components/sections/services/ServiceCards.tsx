@@ -19,7 +19,7 @@ export default function ServiceCards() {
       {services.map((service) => (
         <div
           key={service.title}
-          className="flex flex-col gap-3 rounded-2xl border border-red-100 bg-white p-5 shadow-sm"
+          className="flex flex-col gap-3 rounded-2xl border border-green-100 bg-white p-5 shadow-sm"
         >
           <h2 className="text-sm font-semibold text-slate-900">
             {service.title}

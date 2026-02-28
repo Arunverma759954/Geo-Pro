@@ -24,7 +24,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur-xl shadow-sm">
       <div className="mx-auto flex max-w-[1700px] items-center gap-3 px-4 py-3 sm:gap-4 md:gap-8 md:px-8 lg:px-12">
         <div className="flex min-w-0 flex-shrink-0 items-center gap-4">
-          <div className="relative group flex items-center justify-center h-12 w-12 md:h-20 md:w-20 rounded-full bg-white overflow-hidden border-2 border-[#c40902]/40 shadow-md">
+          <div className="relative group flex items-center justify-center h-12 w-12 md:h-20 md:w-20 rounded-full bg-white overflow-hidden border-2 border-[#16a34a]/40 shadow-md">
             <Image
               src="/logo.jpg"
               alt="GeoDecision Analytics logo"
@@ -35,7 +35,7 @@ export default function Header() {
             />
           </div>
           <div className="min-w-[180px] max-w-[400px] leading-tight">
-            <p className="text-[14px] font-black tracking-[0.2em] text-[#c40902] sm:text-[18px]">
+            <p className="text-[14px] font-black tracking-[0.2em] text-[#16a34a] sm:text-[18px]">
               GeoDecision Analytics
             </p>
             <p className="hidden text-[13px] text-slate-900 font-black sm:block tracking-tight">
@@ -56,13 +56,13 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`group relative pb-1 text-sm font-black transition-all duration-300 ${isActive ? "text-[#c40902]" : "text-slate-600 hover:text-slate-900"
+                  className={`group relative pb-1 text-sm font-black transition-all duration-300 ${isActive ? "text-[#16a34a]" : "text-slate-600 hover:text-slate-900"
                     }`}
                 >
                   {item.label}
                   <span
-                    className={`pointer-events-none absolute inset-x-0 -bottom-1 h-[2px] rounded-full bg-[#c40902] transition-all duration-300 ${isActive
-                      ? "scale-x-100 opacity-100 shadow-[0_0_8px_rgba(196,9,2,0.5)]"
+                    className={`pointer-events-none absolute inset-x-0 -bottom-1 h-[2px] rounded-full bg-[#16a34a] transition-all duration-300 ${isActive
+                      ? "scale-x-100 opacity-100 shadow-[0_0_8px_rgba(22,163,74,0.5)]"
                       : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
                       }`}
                   />
@@ -99,13 +99,13 @@ export default function Header() {
             href="tel:+919876543210"
             className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-1.5 text-xs font-bold text-slate-600 hover:bg-slate-50 transition-all cursor-pointer"
           >
-            <span className="h-1.5 w-1.5 rounded-full bg-[#c40902] animate-pulse" />
+            <span className="h-1.5 w-1.5 rounded-full bg-[#16a34a] animate-pulse" />
             <span>+91-98765-43210</span>
           </a> */}
 
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#c40902] to-[#ff2a1f] px-6 py-2.5 text-sm font-black text-white shadow-[0_4px_14px_0_rgba(196,9,2,0.39)] transition-all duration-300 hover:shadow-[0_6px_20px_rgba(196,9,2,0.23)] hover:-translate-y-0.5 hover:scale-105 cursor-pointer ring-1 ring-white/10"
+            className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#16a34a] to-[#22c55e] px-6 py-2.5 text-sm font-black text-white shadow-[0_4px_14px_0_rgba(22,163,74,0.39)] transition-all duration-300 hover:shadow-[0_6px_20px_rgba(22,163,74,0.23)] hover:-translate-y-0.5 hover:scale-105 cursor-pointer ring-1 ring-white/10"
           >
             Request a Quote
           </Link>
@@ -126,13 +126,13 @@ export default function Header() {
                   key={item.href}
                   href={item.href}
                   className={`flex items-center justify-between rounded-xl px-4 py-3.5 transition-all cursor-pointer ${isActive
-                    ? "bg-[#c40902]/10 text-[#c40902] border border-[#c40902]/20"
+                    ? "bg-[#16a34a]/10 text-[#16a34a] border border-[#16a34a]/20"
                     : "hover:bg-slate-50"
                     }`}
                 >
                   <span>{item.label}</span>
                   {isActive && (
-                    <span className="h-2 w-2 rounded-full bg-[#c40902] shadow-[0_0_8px_rgba(196,9,2,0.4)]" />
+                    <span className="h-2 w-2 rounded-full bg-[#16a34a] shadow-[0_0_8px_rgba(22,163,74,0.4)]" />
                   )}
                 </Link>
               );
@@ -146,7 +146,7 @@ export default function Header() {
               </a>
               <Link
                 href="/contact"
-                className="flex items-center justify-center rounded-xl bg-gradient-to-r from-[#c40902] to-[#ff2a1f] py-3.5 text-sm font-black text-white shadow-[0_4px_14px_0_rgba(196,9,2,0.39)] transition-all duration-300 active:scale-95 cursor-pointer"
+                className="flex items-center justify-center rounded-xl bg-gradient-to-r from-[#16a34a] to-[#22c55e] py-3.5 text-sm font-black text-white shadow-[0_4px_14px_0_rgba(22,163,74,0.39)] transition-all duration-300 active:scale-95 cursor-pointer"
               >
                 Request a Quote
               </Link>

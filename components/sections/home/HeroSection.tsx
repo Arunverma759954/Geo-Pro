@@ -14,7 +14,7 @@ export default function HeroSection() {
           <div className="space-y-8 sm:space-y-10">
             <Reveal direction="left" delay={0.2}>
               <div className="space-y-4">
-                <p className="inline-block text-[10px] font-black tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20">
+                <p className="inline-block text-[10px] font-black tracking-[0.4em] text-[#16a34a] bg-[#16a34a]/10 px-4 py-1.5 rounded-full border border-[#16a34a]/20">
                   GeoDecision Analytics
                 </p>
                 <h1 className="text-2xl font-black tracking-tight text-slate-900 sm:text-3xl lg:text-4xl leading-[1.1]">
@@ -34,12 +34,12 @@ export default function HeroSection() {
               <div className="flex flex-wrap gap-5 pt-4">
                 <Link
                   href="/services"
-                  className="rounded-full bg-[#c40902] px-10 py-4 text-sm font-black text-white transition-all hover:bg-[#b00802] hover:shadow-[0_0_25px_rgba(196,9,2,0.4)] hover:scale-105 cursor-pointer"
+                  className="rounded-full bg-[#16a34a] px-10 py-4 text-sm font-black text-white transition-all hover:bg-[#15803d] hover:shadow-[0_0_25px_rgba(22,163,74,0.4)] hover:scale-105 cursor-pointer"
                 >
                   Explore services
                 </Link>
                 <button className="rounded-full border border-slate-200 bg-white px-10 py-4 text-sm font-black text-slate-900 transition-all hover:bg-slate-50 hover:border-slate-300 hover:scale-105 cursor-pointer">
-                  Request a consultation
+                  Request a Quote
                 </button>
               </div>
             </Reveal>
@@ -63,11 +63,11 @@ export default function HeroSection() {
           {/* Right: image side - Robust Container */}
           <div className="relative">
             {/* Ambient Background Glows */}
-            <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-[#c40902]/10 blur-[100px] animate-pulse" />
+            <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-[#16a34a]/10 blur-[100px] animate-pulse" />
             <div className="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-blue-600/10 blur-[100px] animate-pulse delay-700" />
 
             {/* High Impact Image */}
-            <div className="relative group overflow-hidden rounded-[3rem] border border-slate-100 bg-white shadow-2xl transition-all duration-700 hover:border-[#c40902]/30">
+            <div className="relative group overflow-hidden rounded-[3rem] border border-slate-100 bg-white shadow-2xl transition-all duration-700 hover:border-[#16a34a]/30">
               <div className="relative aspect-[4/3] w-full bg-slate-900/50">
                 <Image
                   src="/Home_3.jpg"
@@ -82,19 +82,19 @@ export default function HeroSection() {
                 <div className="absolute inset-0 border-[0.5px] border-white/5 rounded-[3rem]" />
 
                 {/* Tech UI Elements - Corner Brackets */}
-                <div className="absolute top-10 left-10 h-8 w-8 border-t-2 border-l-2 border-[#c40902]/40 rounded-tl-xl" />
-                <div className="absolute bottom-10 right-10 h-8 w-8 border-b-2 border-r-2 border-[#c40902]/40 rounded-br-xl" />
+                <div className="absolute top-10 left-10 h-8 w-8 border-t-2 border-l-2 border-[#16a34a]/40 rounded-tl-xl" />
+                <div className="absolute bottom-10 right-10 h-8 w-8 border-b-2 border-r-2 border-[#16a34a]/40 rounded-br-xl" />
 
                 {/* Scanning line effect */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#c40902]/20 to-transparent h-20 w-full -translate-y-full animate-scan" />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#16a34a]/20 to-transparent h-20 w-full -translate-y-full animate-scan" />
               </div>
 
               {/* Status Badge */}
               <div className="absolute bottom-8 right-8 p-6 bg-white/90 backdrop-blur-xl rounded-3xl border border-slate-200 shadow-2xl animate-float">
                 <div className="flex items-center gap-4">
-                  <div className="h-3 w-3 rounded-full bg-[#c40902] shadow-[0_0_12px_rgba(196,9,2,0.8)] animate-pulse" />
+                  <div className="h-3 w-3 rounded-full bg-[#16a34a] shadow-[0_0_12px_rgba(22,163,74,0.8)] animate-pulse" />
                   <div>
-                    <p className="text-[10px] font-black uppercase tracking-[0.3em] text-[#c40902] leading-none mb-1">DATA PROCESSING</p>
+                    <p className="text-[10px] font-black uppercase tracking-[0.3em] text-[#16a34a] leading-none mb-1">DATA PROCESSING</p>
                     <p className="text-base font-black text-slate-900 uppercase tracking-wider">SPATIAL ENGINE ACTIVE</p>
                   </div>
                 </div>

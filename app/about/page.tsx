@@ -36,7 +36,7 @@ export default function AboutPage() {
           <div className="max-w-3xl space-y-8">
             <Reveal direction="left" delay={0.2}>
               <div className="space-y-4">
-                <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20">
+                <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#16a34a] bg-[#16a34a]/10 px-4 py-1.5 rounded-full border border-[#16a34a]/20">
                   Who We Are
                 </p>
                 <h1 className="text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl leading-[1.1]">
@@ -65,13 +65,13 @@ export default function AboutPage() {
             <Reveal direction="left" width="100%">
               <div className="space-y-10">
                 <div className="space-y-4">
-                  <div className="h-1.5 w-20 bg-[#c40902] rounded-full mb-6" />
+                  <div className="h-1.5 w-20 bg-[#16a34a] rounded-full mb-6" />
                   <h2 className="text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl leading-tight">
-                    Precision. Insight. <span className="text-[#c40902]">Confidence.</span>
+                    Precision. Insight. <span className="text-[#16a34a]">Confidence.</span>
                   </h2>
                 </div>
                 <div className="space-y-8">
-                  <p className="text-slate-900 font-black text-xl border-l-4 border-[#c40902] pl-6 py-4 bg-white rounded-r-2xl">
+                  <p className="text-slate-900 font-black text-xl border-l-4 border-[#16a34a] pl-6 py-4 bg-white rounded-r-2xl">
                     GeoDecision Analytics was founded on the principle that spatial data should enable confident, evidence-based decisions — not confusion.
                   </p>
                   <div className="space-y-6 text-lg leading-relaxed text-slate-700 font-bold">
@@ -124,18 +124,18 @@ export default function AboutPage() {
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
               {methodology.map((step, idx) => (
                 <Reveal key={idx} direction="up" delay={idx * 0.1}>
-                  <div className="flex flex-col h-full gap-6 p-8 bg-white border-2 border-slate-100 rounded-[2rem] group/item hover:border-[#c40902]/30 hover:shadow-2xl transition-all hover:-translate-y-2">
-                    <span className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-2xl bg-[#c40902] text-white text-xl font-black shadow-[0_0_20px_rgba(196,9,2,0.4)]">
+                  <div className="flex flex-col h-full gap-6 p-8 bg-white border-2 border-slate-100 rounded-[2rem] group/item hover:border-[#16a34a]/30 hover:shadow-2xl transition-all hover:-translate-y-2">
+                    <span className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-2xl bg-[#16a34a] text-white text-xl font-black shadow-[0_0_20px_rgba(22,163,74,0.4)]">
                       {idx + 1}
                     </span>
-                    <p className="text-xl font-black text-slate-900 leading-tight group-hover/item:text-[#c40902] transition-colors">{step}</p>
+                    <p className="text-xl font-black text-slate-900 leading-tight group-hover/item:text-[#16a34a] transition-colors">{step}</p>
                   </div>
                 </Reveal>
               ))}
             </div>
             <div className="pt-12 flex items-center gap-6">
               <div className="h-0.5 flex-grow bg-slate-200" />
-              <p className="text-lg font-black text-[#c40902] bg-white px-8 py-3 rounded-full border-2 border-[#c40902]/10 shadow-sm leading-tight text-center">
+              <p className="text-lg font-black text-[#16a34a] bg-white px-8 py-3 rounded-full border-2 border-[#16a34a]/10 shadow-sm leading-tight text-center">
                 Every engagement is guided by clarity, precision, and measurable impact.
               </p>
               <div className="h-0.5 flex-grow bg-slate-200" />
@@ -158,8 +158,8 @@ export default function AboutPage() {
                 </div>
                 <div className="grid gap-4">
                   {leadershipAreas.map((area, idx) => (
-                    <div key={idx} className="flex items-center gap-6 p-6 bg-white border-2 border-slate-100 rounded-[1.5rem] group hover:border-[#c40902]/30 transition-all">
-                      <div className="h-3 w-3 rounded-full bg-[#c40902] shadow-[0_0_15px_rgba(196,9,2,0.4)]" />
+                    <div key={idx} className="flex items-center gap-6 p-6 bg-white border-2 border-slate-100 rounded-[1.5rem] group hover:border-[#16a34a]/30 transition-all">
+                      <div className="h-3 w-3 rounded-full bg-[#16a34a] shadow-[0_0_15px_rgba(22,163,74,0.4)]" />
                       <p className="text-lg font-black text-slate-900 group-hover:translate-x-2 transition-transform">{area}</p>
                     </div>
                   ))}
@@ -177,13 +177,13 @@ export default function AboutPage() {
                 <div className="grid gap-6 sm:grid-cols-2">
                   <Reveal direction="up" delay={0.2}>
                     <div className="p-8 rounded-[2rem] bg-slate-50 border-2 border-slate-100 space-y-4 shadow-sm">
-                      <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20 mb-3">Our Mission</p>
+                      <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#16a34a] bg-[#16a34a]/10 px-4 py-1.5 rounded-full border border-[#16a34a]/20 mb-3">Our Mission</p>
                       <p className="text-2xl font-black text-slate-900 leading-tight">To transform spatial complexity into confident decisions.</p>
                     </div>
                   </Reveal>
                   <Reveal direction="up" delay={0.4}>
                     <div className="p-8 rounded-[2rem] bg-white border-2 border-slate-100 space-y-4 shadow-sm">
-                      <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20 mb-3">Our Vision</p>
+                      <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#16a34a] bg-[#16a34a]/10 px-4 py-1.5 rounded-full border border-[#16a34a]/20 mb-3">Our Vision</p>
                       <p className="text-lg text-slate-700 font-bold leading-relaxed">To become a trusted advisor in spatial intelligence for organisations globally.</p>
                     </div>
                   </Reveal>
@@ -203,7 +203,7 @@ export default function AboutPage() {
               We combine advanced geospatial platforms, structured analytical methodologies, and sector-specific expertise to deliver solutions aligned with your operational and strategic objectives.
             </p>
             <div className="flex justify-center pt-8">
-              <div className="h-1.5 w-40 bg-gradient-to-r from-transparent via-[#c40902]/40 to-transparent rounded-full" />
+              <div className="h-1.5 w-40 bg-gradient-to-r from-transparent via-[#16a34a]/40 to-transparent rounded-full" />
             </div>
           </div>
         </div>
