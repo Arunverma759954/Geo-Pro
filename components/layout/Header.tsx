@@ -105,9 +105,9 @@ export default function Header() {
 
           <Link
             href="/contact"
-            className="inline-flex rounded-full bg-[#c40902] px-6 py-2 text-sm font-black text-white shadow-[0_0_15px_rgba(196,9,2,0.3)] transition-all hover:bg-[#b00802] hover:scale-105 cursor-pointer"
+            className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#c40902] to-[#ff2a1f] px-6 py-2.5 text-sm font-black text-white shadow-[0_4px_14px_0_rgba(196,9,2,0.39)] transition-all duration-300 hover:shadow-[0_6px_20px_rgba(196,9,2,0.23)] hover:-translate-y-0.5 hover:scale-105 cursor-pointer ring-1 ring-white/10"
           >
-            Get in touch
+            Request a Quote
           </Link>
         </div>
       </div>
@@ -146,9 +146,9 @@ export default function Header() {
               </a>
               <Link
                 href="/contact"
-                className="flex items-center justify-center rounded-xl bg-[#c40902] py-3.5 text-sm font-black text-white shadow-lg cursor-pointer"
+                className="flex items-center justify-center rounded-xl bg-gradient-to-r from-[#c40902] to-[#ff2a1f] py-3.5 text-sm font-black text-white shadow-[0_4px_14px_0_rgba(196,9,2,0.39)] transition-all duration-300 active:scale-95 cursor-pointer"
               >
-                Get in touch
+                Request a Quote
               </Link>
             </div>
           </nav>
