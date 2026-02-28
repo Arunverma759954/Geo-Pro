@@ -51,7 +51,6 @@ export const Reveal = ({
             style={{
                 position: "relative",
                 width,
-                overflow: "hidden",
             }}
         >
             <motion.div

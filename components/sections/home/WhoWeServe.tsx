@@ -48,64 +48,71 @@ export default function WhoWeServe() {
   ];
 
   return (
-    <section className="space-y-12 sm:space-y-16">
-      <Reveal direction="up" width="100%">
-        <header className="space-y-4 text-center max-w-3xl mx-auto">
-          <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20">
-            Who We Serve
-          </p>
-          <h2 className="text-2xl font-black tracking-tight text-white sm:text-3xl lg:text-4xl">
-            Supporting organisations that rely on spatial intelligence for high‑stakes decision‑making.
-          </h2>
-        </header>
-      </Reveal>
+    <section className="relative overflow-hidden bg-white py-20 md:py-32">
+      <div className="mx-auto max-w-[1700px] px-4 sm:px-6 lg:px-12 md:px-8 relative z-10 space-y-12 sm:space-y-16">
+        <Reveal direction="up" width="100%">
+          <header className="space-y-4 text-center max-w-3xl mx-auto">
+            <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20">
+              Who We Serve
+            </p>
+            <div className="max-w-3xl space-y-6 mx-auto">
+              <h2 className="text-2xl font-black tracking-tight text-slate-900 sm:text-3xl lg:text-4xl leading-tight">
+                Empowering Decision-Makers Across Every Sector
+              </h2>
+              <p className="text-lg text-slate-700 font-bold leading-relaxed max-w-2xl mx-auto">
+                We leverage geospatial intelligence to solve complex spatial challenges, reducing risk and accelerating operational results for our partners.
+              </p>
+            </div>
+          </header>
+        </Reveal>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {industries.map((item, idx) => (
-          <Reveal
-            key={idx}
-            direction={idx % 2 === 0 ? "left" : "right"}
-            delay={idx * 0.1}
-            width="100%"
-            className="h-full"
-          >
-            <div
-              className="group flex flex-col h-full overflow-hidden rounded-2xl border border-white/5 glass-card transition-all duration-300 hover:border-cyan-500/30 hover:translate-y-[-4px]"
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {industries.map((item, idx) => (
+            <Reveal
+              key={idx}
+              direction={idx % 2 === 0 ? "left" : "right"}
+              delay={idx * 0.1}
+              width="100%"
+              className="h-full"
             >
-              <div className="relative h-48 w-full overflow-hidden">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#041d3d] via-[#041d3d]/20 to-transparent opacity-60" />
-                <div className="absolute bottom-4 left-4">
-                  <h3 className="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors">
-                    {item.title}
-                  </h3>
+              <div
+                className="group flex flex-col h-full overflow-hidden rounded-2xl border-2 border-slate-100 bg-white transition-all duration-300 hover:border-[#c40902]/30 hover:shadow-2xl hover:translate-y-[-4px] cursor-pointer"
+              >
+                <div className="relative h-48 w-full overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent opacity-60" />
+                  <div className="absolute bottom-4 left-4">
+                    <h3 className="text-lg font-black text-white group-hover:text-[#c40902] transition-colors">
+                      {item.title}
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="flex flex-1 flex-col p-6 space-y-4">
+                  <p className="text-sm leading-relaxed text-slate-600 font-medium">
+                    {item.description}
+                  </p>
+
+                  {item.bullets && (
+                    <ul className="grid gap-2 text-xs text-slate-500 border-t border-slate-100 pt-4">
+                      {item.bullets.map((bullet, bIdx) => (
+                        <li key={bIdx} className="flex items-start gap-2">
+                          <span className="text-[#c40902] font-black leading-none">✔</span>
+                          <span>{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
-
-              <div className="flex flex-1 flex-col p-6 space-y-4">
-                <p className="text-sm leading-relaxed text-slate-300">
-                  {item.description}
-                </p>
-
-                {item.bullets && (
-                  <ul className="grid gap-2 text-xs text-slate-400 border-t border-white/5 pt-4">
-                    {item.bullets.map((bullet, bIdx) => (
-                      <li key={bIdx} className="flex items-start gap-2">
-                        <span className="text-cyan-500 font-bold leading-none">✔</span>
-                        <span>{bullet}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            </div>
-          </Reveal>
-        ))}
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );

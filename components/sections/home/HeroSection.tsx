@@ -5,9 +5,8 @@ import { Reveal } from "@/components/animations/Reveal";
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden pt-10 pb-16 sm:pt-16 sm:pb-24 lg:pt-20 lg:pb-32">
-      {/* Background elements */}
-      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_-20%,#0a2e5c,transparent)]" />
-      <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#c40902]/20 to-transparent" />
+      {/* Background elements - Clean White */}
+      <div className="absolute inset-0 z-0 bg-white" />
 
       <div className="relative z-10 mx-auto max-w-[1700px] px-4 sm:px-6 lg:px-12 md:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
@@ -18,18 +17,16 @@ export default function HeroSection() {
                 <p className="inline-block text-[10px] font-black tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20">
                   GeoDecision Analytics
                 </p>
-                <h1 className="text-2xl font-black tracking-tight text-white sm:text-3xl lg:text-4xl leading-[1.1]">
+                <h1 className="text-2xl font-black tracking-tight text-slate-900 sm:text-3xl lg:text-4xl leading-[1.1]">
                   Transforming Spatial Data into{" "}
                   <span className="text-gradient">Confident Decisions.</span>
                 </h1>
               </div>
             </Reveal>
 
-            <Reveal direction="left" delay={0.4}>
-              <p className="text-lg sm:text-xl leading-relaxed text-slate-300 max-w-2xl font-medium">
-                We partner with governments, infrastructure agencies, environmental
-                organisations, and researchers to convert complex spatial data into clear,
-                defensible, decision‑ready insights.
+            <Reveal direction="up" delay={0.6}>
+              <p className="text-xl sm:text-2xl leading-relaxed text-slate-700 font-bold max-w-2xl">
+                Reducing uncertainty through structured geospatial analysis and defensible strategic insights.
               </p>
             </Reveal>
 
@@ -37,11 +34,11 @@ export default function HeroSection() {
               <div className="flex flex-wrap gap-5 pt-4">
                 <Link
                   href="/services"
-                  className="rounded-full bg-[#c40902] px-10 py-4 text-sm font-black text-white transition-all hover:bg-[#b00802] hover:shadow-[0_0_25px_rgba(196,9,2,0.4)] hover:scale-105"
+                  className="rounded-full bg-[#c40902] px-10 py-4 text-sm font-black text-white transition-all hover:bg-[#b00802] hover:shadow-[0_0_25px_rgba(196,9,2,0.4)] hover:scale-105 cursor-pointer"
                 >
                   Explore services
                 </Link>
-                <button className="rounded-full border border-white/10 bg-white/5 px-10 py-4 text-sm font-black text-white transition-all hover:bg-white/10 hover:border-white/20 hover:scale-105">
+                <button className="rounded-full border border-slate-200 bg-white px-10 py-4 text-sm font-black text-slate-900 transition-all hover:bg-slate-50 hover:border-slate-300 hover:scale-105 cursor-pointer">
                   Request a consultation
                 </button>
               </div>
@@ -55,8 +52,8 @@ export default function HeroSection() {
                   { label: "Strategic Insights", sub: "Decision-ready intelligence" }
                 ].map((item, i) => (
                   <div key={i} className="space-y-1">
-                    <p className="text-sm font-black text-white">{item.label}</p>
-                    <p className="text-xs text-slate-400 font-bold">{item.sub}</p>
+                    <p className="text-sm font-black text-slate-900">{item.label}</p>
+                    <p className="text-xs text-slate-500 font-bold">{item.sub}</p>
                   </div>
                 ))}
               </div>
@@ -70,7 +67,7 @@ export default function HeroSection() {
             <div className="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-blue-600/10 blur-[100px] animate-pulse delay-700" />
 
             {/* High Impact Image */}
-            <div className="relative group overflow-hidden rounded-[3rem] border border-white/10 glass-card shadow-2xl transition-all duration-700 hover:border-[#c40902]/30">
+            <div className="relative group overflow-hidden rounded-[3rem] border border-slate-100 bg-white shadow-2xl transition-all duration-700 hover:border-[#c40902]/30">
               <div className="relative aspect-[4/3] w-full bg-slate-900/50">
                 <Image
                   src="/Home_3.jpg"
@@ -93,12 +90,12 @@ export default function HeroSection() {
               </div>
 
               {/* Status Badge */}
-              <div className="absolute bottom-8 right-8 p-6 glass-card rounded-3xl border border-white/10 shadow-2xl animate-float">
+              <div className="absolute bottom-8 right-8 p-6 bg-white/90 backdrop-blur-xl rounded-3xl border border-slate-200 shadow-2xl animate-float">
                 <div className="flex items-center gap-4">
                   <div className="h-3 w-3 rounded-full bg-[#c40902] shadow-[0_0_12px_rgba(196,9,2,0.8)] animate-pulse" />
                   <div>
                     <p className="text-[10px] font-black uppercase tracking-[0.3em] text-[#c40902] leading-none mb-1">DATA PROCESSING</p>
-                    <p className="text-base font-black text-white uppercase tracking-wider">SPATIAL ENGINE ACTIVE</p>
+                    <p className="text-base font-black text-slate-900 uppercase tracking-wider">SPATIAL ENGINE ACTIVE</p>
                   </div>
                 </div>
               </div>

@@ -5,29 +5,30 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative mt-20 border-t border-white/5 bg-[#020617] text-slate-400 overflow-hidden">
+    <footer className="relative mt-20 border-t border-white/5 bg-slate-950 text-slate-400 overflow-hidden">
       {/* Background Glow */}
       <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 h-64 w-[800px] rounded-full bg-[#c40902]/5 blur-[100px] pointer-events-none" />
 
-      <div className="relative z-10 mx-auto max-w-[1700px] px-6 py-12 md:px-12 md:py-20">
-        <div className="grid gap-12 lg:grid-cols-4">
+      <div className="relative z-10 mx-auto max-w-[1700px] px-6 py-12 md:px-12 md:py-16">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Logo & About */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center gap-4">
-              <div className="relative h-12 w-12 overflow-hidden rounded-2xl border border-white/10 glass-card">
+              <div className="h-12 w-12 md:h-16 md:w-16 rounded-full bg-white overflow-hidden border-2 border-[#c40902]/40 shadow-lg flex-shrink-0">
                 <Image
                   src="/logo.jpg"
                   alt="GeoDecision Analytics logo"
-                  fill
-                  className="object-cover scale-110"
+                  width={160}
+                  height={160}
+                  className="h-full w-full object-cover"
                 />
               </div>
-              <div className="space-y-1">
-                <p className="text-sm font-black tracking-[0.3em] text-white">
+              <div className="min-w-[150px] max-w-[350px] leading-tight">
+                <p className="text-[14px] font-black tracking-[0.1em] text-[#c40902] sm:text-[16px]">
                   GeoDecision Analytics
                 </p>
-                <p className="text-xs text-[#c40902] font-bold uppercase tracking-widest">
-                  Spatial Intelligence Platform
+                <p className="text-[12px] text-white font-black tracking-tight">
+                  Transforming Spatial Data into Confident Decisions
                 </p>
               </div>
             </div>
@@ -47,7 +48,7 @@ export default function Footer() {
                 <Link
                   key={social.name}
                   href={social.href}
-                  className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/5 bg-white/5 text-slate-400 transition-all hover:border-[#c40902]/30 hover:text-[#c40902] hover:bg-[#c40902]/5"
+                  className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/5 bg-white/5 text-slate-400 transition-all hover:border-[#c40902]/30 hover:text-[#c40902] hover:bg-[#c40902]/5 cursor-pointer"
                 >
                   <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
                     <path d={social.icon} />
@@ -58,7 +59,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-6">
+          <div className="space-y-6 lg:pl-4">
             <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20">
               Navigation
             </p>
@@ -70,7 +71,7 @@ export default function Footer() {
                 { name: "Contact Specialist", href: "/contact" }
               ].map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm font-black text-slate-400 transition-colors hover:text-[#c40902] flex items-center gap-2 group">
+                  <Link href={link.href} className="text-sm font-black text-slate-400 transition-colors hover:text-[#c40902] flex items-center gap-2 group cursor-pointer">
                     <span className="h-1 w-1 rounded-full bg-white/10 group-hover:bg-[#c40902] transition-all" />
                     {link.name}
                   </Link>
@@ -80,22 +81,18 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-6">
+          <div className="space-y-6 lg:pl-8">
             <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#c40902] bg-[#c40902]/10 px-4 py-1.5 rounded-full border border-[#c40902]/20">
               Reach Out
             </p>
             <div className="space-y-4">
               <div className="space-y-1">
                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 leading-none mb-1">Email</p>
-                <p className="text-sm font-bold text-white">contact@geodecision.com</p>
-              </div>
-              <div className="space-y-1">
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 leading-none mb-1">Phone</p>
-                <p className="text-sm font-bold text-white">+61 7 3000 0000</p>
+                <p className="text-sm font-bold text-white transition-colors hover:text-[#c40902]">contact@geodecision.com</p>
               </div>
               <div className="space-y-1">
                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 leading-none mb-1">HQ</p>
-                <p className="text-sm font-bold text-white">Brisbane, Queensland</p>
+                <p className="text-sm font-bold text-white uppercase tracking-wider">Brisbane, Australia</p>
               </div>
             </div>
           </div>

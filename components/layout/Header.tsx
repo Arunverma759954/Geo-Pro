@@ -21,25 +21,25 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/5 bg-[#041d3d]/80 backdrop-blur-2xl">
+    <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur-xl shadow-sm">
       <div className="mx-auto flex max-w-[1700px] items-center gap-3 px-4 py-3 sm:gap-4 md:gap-8 md:px-8 lg:px-12">
-        <div className="flex min-w-0 flex-shrink-0 items-center gap-3">
-          <div className="relative group flex items-center justify-center h-10 w-10 md:h-14 md:w-14 rounded-full bg-white overflow-hidden border-2 border-[#c40902]/30">
+        <div className="flex min-w-0 flex-shrink-0 items-center gap-4">
+          <div className="relative group flex items-center justify-center h-12 w-12 md:h-20 md:w-20 rounded-full bg-white overflow-hidden border-2 border-[#c40902]/40 shadow-md">
             <Image
               src="/logo.jpg"
               alt="GeoDecision Analytics logo"
-              width={120}
-              height={120}
+              width={160}
+              height={160}
               className="h-full w-full object-cover transition-all duration-500 group-hover:scale-110"
               priority
             />
           </div>
-          <div className="min-w-0 leading-tight">
-            <p className="truncate text-[10px] font-black tracking-[0.4em] text-[#c40902] sm:text-[12px]">
+          <div className="min-w-[180px] max-w-[400px] leading-tight">
+            <p className="text-[14px] font-black tracking-[0.2em] text-[#c40902] sm:text-[18px]">
               GeoDecision Analytics
             </p>
-            <p className="hidden text-[11px] text-slate-400 font-bold sm:block opacity-60 tracking-wider">
-              Spatial Data into Confident Decisions
+            <p className="hidden text-[13px] text-slate-900 font-black sm:block tracking-tight">
+              Transforming Spatial Data into Confident Decisions
             </p>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`group relative pb-1 text-sm font-black transition-all duration-300 ${isActive ? "text-[#c40902]" : "text-white/80 hover:text-white"
+                  className={`group relative pb-1 text-sm font-black transition-all duration-300 ${isActive ? "text-[#c40902]" : "text-slate-600 hover:text-slate-900"
                     }`}
                 >
                   {item.label}
@@ -74,20 +74,20 @@ export default function Header() {
           <button
             type="button"
             aria-label="Toggle navigation"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white shadow-sm md:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-900 shadow-sm md:hidden cursor-pointer"
             onClick={() => setIsOpen((prev) => !prev)}
           >
             <span className="flex h-3.5 w-4 flex-col justify-between">
               <span
-                className={`h-0.5 w-full rounded-full bg-white transition-transform ${isOpen ? "translate-y-1.5 rotate-45" : ""
+                className={`h-0.5 w-full rounded-full bg-slate-900 transition-transform ${isOpen ? "translate-y-1.5 rotate-45" : ""
                   }`}
               />
               <span
-                className={`h-0.5 w-full rounded-full bg-white transition-opacity ${isOpen ? "opacity-0" : "opacity-100"
+                className={`h-0.5 w-full rounded-full bg-slate-900 transition-opacity ${isOpen ? "opacity-0" : "opacity-100"
                   }`}
               />
               <span
-                className={`h-0.5 w-full rounded-full bg-white transition-transform ${isOpen ? "-translate-y-1.5 -rotate-45" : ""
+                className={`h-0.5 w-full rounded-full bg-slate-900 transition-transform ${isOpen ? "-translate-y-1.5 -rotate-45" : ""
                   }`}
               />
             </span>
@@ -95,17 +95,17 @@ export default function Header() {
         </div>
 
         <div className="hidden items-center gap-4 md:flex">
-          <a
+          {/* <a
             href="tel:+919876543210"
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-bold text-white hover:bg-white/10 transition-all"
+            className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-1.5 text-xs font-bold text-slate-600 hover:bg-slate-50 transition-all cursor-pointer"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[#c40902] animate-pulse" />
             <span>+91-98765-43210</span>
-          </a>
+          </a> */}
 
           <Link
             href="/contact"
-            className="inline-flex rounded-full bg-[#c40902] px-6 py-2 text-sm font-black text-white shadow-[0_0_15px_rgba(196,9,2,0.3)] transition-all hover:bg-[#b00802] hover:scale-105"
+            className="inline-flex rounded-full bg-[#c40902] px-6 py-2 text-sm font-black text-white shadow-[0_0_15px_rgba(196,9,2,0.3)] transition-all hover:bg-[#b00802] hover:scale-105 cursor-pointer"
           >
             Get in touch
           </Link>
@@ -113,8 +113,8 @@ export default function Header() {
       </div>
 
       {isOpen && (
-        <div className="border-t border-white/5 bg-[#041d3d]/98 backdrop-blur-2xl md:hidden">
-          <nav className="mx-auto flex flex-col gap-2 px-4 py-6 text-sm font-bold text-white">
+        <div className="border-t border-slate-100 bg-white shadow-2xl md:hidden overflow-hidden">
+          <nav className="mx-auto flex flex-col gap-2 px-4 py-6 text-sm font-bold text-slate-900">
             {navItems.map((item) => {
               const isActive =
                 item.href === "/"
@@ -125,28 +125,28 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`flex items-center justify-between rounded-xl px-4 py-3.5 transition-all ${isActive
-                    ? "bg-cyan-500/10 text-cyan-400 border border-cyan-500/20"
-                    : "hover:bg-white/5"
+                  className={`flex items-center justify-between rounded-xl px-4 py-3.5 transition-all cursor-pointer ${isActive
+                    ? "bg-[#c40902]/10 text-[#c40902] border border-[#c40902]/20"
+                    : "hover:bg-slate-50"
                     }`}
                 >
                   <span>{item.label}</span>
                   {isActive && (
-                    <span className="h-2 w-2 rounded-full bg-cyan-400" />
+                    <span className="h-2 w-2 rounded-full bg-[#c40902] shadow-[0_0_8px_rgba(196,9,2,0.4)]" />
                   )}
                 </Link>
               );
             })}
-            <div className="mt-4 flex flex-col gap-3 border-t border-white/5 pt-4">
+            <div className="mt-4 flex flex-col gap-3 border-t border-slate-100 pt-4">
               <a
                 href="tel:+919876543210"
-                className="flex items-center justify-center gap-3 rounded-xl border border-white/10 bg-white/5 py-3.5 text-xs font-bold text-white"
+                className="flex items-center justify-center gap-3 rounded-xl border border-slate-100 bg-slate-50 py-3.5 text-xs font-black text-slate-600 cursor-pointer"
               >
                 <span>Call: +91-98765-43210</span>
               </a>
               <Link
                 href="/contact"
-                className="flex items-center justify-center rounded-xl bg-cyan-500 py-3.5 text-sm font-bold text-slate-950"
+                className="flex items-center justify-center rounded-xl bg-[#c40902] py-3.5 text-sm font-black text-white shadow-lg cursor-pointer"
               >
                 Get in touch
               </Link>
