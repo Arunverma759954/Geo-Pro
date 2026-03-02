@@ -24,13 +24,7 @@ export default function GisCapabilities() {
             image: "/Home_2.jpg",
             tag: "Visualization",
         },
-        {
-            title: "Geospatial APIs",
-            description:
-                "RESTful APIs for custom integrations and third-party application connectivity.",
-            image: "/Service_4.jpg",
-            tag: "Integration",
-        },
+
     ];
 
     return (

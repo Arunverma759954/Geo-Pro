@@ -5,7 +5,7 @@ export default function WhoWeServe() {
   const industries = [
     {
       title: "Government & Local Councils",
-      description: "We support public-sector agencies in delivering defensible spatial analysis for planning, regulation, infrastructure strategy, and community development.",
+      description: "We deliver evidence-based spatial analysis to inform planning, regulatory oversight, infrastructure strategy, and sustainable community development.",
       image: "/Environ_9.jpg",
     },
     {
@@ -20,30 +20,20 @@ export default function WhoWeServe() {
     },
     {
       title: "Mining & Energy Projects",
-      description: "We help resource and energy organisations manage environmental risk, regulatory obligations, and site development decisions using defensible spatial intelligence.",
+      description: "We help resource and energy organisations manage environmental risk, regulatory obligations, and site development decisions using defensible spatial intelligence. (Don't include the points)",
       image: "/Environ_6.jpg",
-      bullets: [
-        "Impact assessment mapping",
-        "Compliance & reporting support",
-        "Environmental buffer analysis",
-        "Risk-based site evaluation"
-      ]
+
     },
     {
       title: "Public Health & Research",
-      description: "We support researchers and analytical teams in integrating spatial intelligence into epidemiological studies and environmental health modelling.",
+      description: "Private & Commercial Enterprises: We support organisations seeking to integrate spatial intelligence into strategic planning, site selection, environmental compliance, and investment decisions. (Don’t include the points)",
       image: "/Environ_5.jpg",
     },
     {
       title: "Private & Commercial Enterprises",
       description: "We support organisations seeking to integrate spatial intelligence into strategic planning, site selection, environmental compliance, and investment decisions.",
       image: "/Enterprice_2.jpg",
-      bullets: [
-        "Development feasibility analysis",
-        "Market & location intelligence",
-        "Environmental risk due diligence",
-        "Infrastructure & expansion planning"
-      ]
+
     }
   ];
 
@@ -57,7 +47,7 @@ export default function WhoWeServe() {
             </p>
             <div className="max-w-3xl space-y-6 mx-auto">
               <h2 className="text-2xl font-black tracking-tight text-white sm:text-3xl lg:text-4xl leading-tight">
-                Empowering Decision-Makers Across Every Sector
+                Empowering Decision-Makers Through Spatial Intelligence Across Sectors
               </h2>
               <p className="text-lg text-slate-300 font-bold leading-relaxed max-w-2xl mx-auto">
                 We leverage geospatial intelligence to solve complex spatial challenges, reducing risk and accelerating operational results for our partners.

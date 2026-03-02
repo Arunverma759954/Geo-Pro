@@ -87,6 +87,18 @@ export default function ContactLayout() {
               </div>
 
               <div className="space-y-2">
+                <label htmlFor="country" className="text-xs font-black uppercase tracking-widest text-slate-700 ml-1">
+                  Country
+                </label>
+                <input
+                  id="country"
+                  type="text"
+                  placeholder="Your country"
+                  className="w-full rounded-2xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-sm text-slate-900 shadow-sm outline-none transition-all focus:border-[#16a34a] focus:ring-4 focus:ring-[#16a34a]/10 placeholder:text-slate-500 font-bold"
+                />
+              </div>
+
+              <div className="md:col-span-2 space-y-2">
                 <label htmlFor="subject" className="text-xs font-black uppercase tracking-widest text-slate-700 ml-1">
                   Subject
                 </label>
@@ -143,7 +155,7 @@ export default function ContactLayout() {
                 </div>
                 <div className="space-y-4">
                   <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#16a34a] bg-[#16a34a]/10 px-4 py-1.5 rounded-full border border-[#16a34a]/20">
-                    Our HQ
+                    Our Location
                   </p>
                   <p className="text-xl font-black text-slate-900">Brisbane, Australia</p>
                 </div>

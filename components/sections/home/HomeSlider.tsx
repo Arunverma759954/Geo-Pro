@@ -83,9 +83,9 @@ export default function HomeSlider() {
                         <Reveal direction="up" delay={0.8}>
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-white/20">
                                 {[
-                                    { label: "Advanced Modeling", sub: "High-fidelity simulations" },
-                                    { label: "Defensible Data", sub: "Evidence-based frameworks" },
-                                    { label: "Strategic Insights", sub: "Decision-ready intelligence" }
+                                    // { label: "Advanced Modeling", sub: "High-fidelity simulations" },
+                                    // { label: "Defensible Data", sub: "Evidence-based frameworks" },
+                                    // { label: "Strategic Insights", sub: "Decision-ready intelligence" }
                                 ].map((item, i) => (
                                     <div key={i} className="space-y-1">
                                         <p className="text-sm font-black text-white">{item.label}</p>
