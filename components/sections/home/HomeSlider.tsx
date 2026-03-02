@@ -80,20 +80,7 @@ export default function HomeSlider() {
                             </div>
                         </Reveal>
 
-                        <Reveal direction="up" delay={0.8}>
-                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-white/20">
-                                {[
-                                    // { label: "Advanced Modeling", sub: "High-fidelity simulations" },
-                                    // { label: "Defensible Data", sub: "Evidence-based frameworks" },
-                                    // { label: "Strategic Insights", sub: "Decision-ready intelligence" }
-                                ].map((item, i) => (
-                                    <div key={i} className="space-y-1">
-                                        <p className="text-sm font-black text-white">{item.label}</p>
-                                        <p className="text-xs text-slate-300 font-bold">{item.sub}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </Reveal>
+                        {/* Stats grid section removed - was empty/commented */}
                     </div>
                 </div>
             </div>

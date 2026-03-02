@@ -88,16 +88,7 @@ export default function WhoWeServe() {
                     {item.description}
                   </p>
 
-                  {item.bullets && (
-                    <ul className="grid gap-2 text-xs text-slate-400 border-t border-slate-700 pt-4">
-                      {item.bullets.map((bullet, bIdx) => (
-                        <li key={bIdx} className="flex items-start gap-2">
-                          <span className="text-[#16a34a] font-black leading-none">✔</span>
-                          <span>{bullet}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  {/* Bullets section removed as no data exists and items noted not to include points */}
                 </div>
               </div>
             </Reveal>
