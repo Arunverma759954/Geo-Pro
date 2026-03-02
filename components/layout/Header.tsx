@@ -23,26 +23,26 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur-xl shadow-sm">
       <div className="mx-auto flex max-w-[1700px] items-center gap-3 px-4 py-3 sm:gap-4 md:gap-8 md:px-8 lg:px-12">
-        <div className="flex min-w-0 flex-shrink-0 items-center gap-4">
-          <div className="relative group flex items-center justify-center h-12 w-12 md:h-20 md:w-20 rounded-full bg-white overflow-hidden border-2 border-[#16a34a]/40 shadow-md">
+        <Link href="/" className="flex min-w-0 flex-shrink-0 items-center gap-4 group/logo">
+          <div className="relative flex items-center justify-center h-12 w-12 md:h-20 md:w-20 rounded-full bg-white overflow-hidden border-2 border-[#16a34a]/40 shadow-md transition-all duration-300 group-hover/logo:border-[#16a34a] group-hover/logo:shadow-lg">
             <Image
               src="/logo.jpg"
               alt="GeoDecision Analytics logo"
               width={160}
               height={160}
-              className="h-full w-full object-cover transition-all duration-500 group-hover:scale-110"
+              className="h-full w-full object-cover transition-all duration-500 group-hover/logo:scale-110"
               priority
             />
           </div>
           <div className="min-w-[180px] max-w-[400px] leading-tight">
-            <p className="text-[14px] font-black tracking-[0.2em] text-[#16a34a] sm:text-[18px]">
+            <p className="text-[14px] font-black tracking-[0.2em] text-[#16a34a] sm:text-[18px] transition-colors group-hover/logo:text-[#15803d]">
               GeoDecision Analytics
             </p>
             <p className="hidden text-[13px] text-slate-900 font-black sm:block tracking-tight">
               Transforming Spatial Data into Confident Decisions
             </p>
           </div>
-        </div>
+        </Link>
 
         <div className="flex flex-1 items-center justify-end gap-3 md:justify-center md:gap-8">
           <nav className="hidden items-center gap-8 text-sm font-bold text-white md:flex">
