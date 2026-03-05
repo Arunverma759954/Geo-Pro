@@ -54,7 +54,7 @@ export default function ServicesPage() {
         <section className="relative overflow-hidden rounded-[40px] border border-slate-100 bg-white px-8 py-20 md:px-16 md:py-32 shadow-xl">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/Environ_1.jpg"
+              src="/Enterprise_Services_1.webp"
               alt="Strategic Spatial Intelligence"
               fill
               className="object-cover opacity-60"
