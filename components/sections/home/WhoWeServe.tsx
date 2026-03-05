@@ -27,7 +27,7 @@ export default function WhoWeServe() {
     {
       title: "Public Health & Research",
       description: "Private & Commercial Enterprises: We support organisations seeking to integrate spatial intelligence into strategic planning, site selection, environmental compliance, and investment decisions. (Don’t include the points)",
-      image: "/Health_1”.webp",
+      image: "/Health_1.webp",
     },
     {
       title: "Private & Commercial Enterprises",
