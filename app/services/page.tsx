@@ -14,13 +14,13 @@ export default function ServicesPage() {
       title: "Environmental & Exposure Modelling",
       description: "Advanced spatial modelling integrating environmental data, satellite analytics, and sociodemographic layers.",
       bullets: ["Air pollution (PM2.5) modelling", "Greenspace (EVI/NDVI) analysis", "Environmental-health linkages", "Spatial statistical integration"],
-      image: "/Service_2.jpg"
+      image: "/Environmental_Modelling_1.webp"
     },
     {
       title: "Enterprise GIS & Data Systems",
       description: "Optimising spatial infrastructure for organisations requiring scalable, secure, and automated GIS environments.",
       bullets: ["ArcGIS Enterprise deployment", "Spatial database architecture", "FME automation workflows", "QA/QC & governance frameworks"],
-      image: "/Service_5.jpg"
+      image: "/Data_System_1.webp"
     },
     {
       title: "Decision Intelligence & Visualisation",
