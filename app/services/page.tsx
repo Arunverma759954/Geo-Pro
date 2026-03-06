@@ -14,13 +14,13 @@ export default function ServicesPage() {
       title: "Environmental & Exposure Modelling",
       description: "Advanced spatial modelling integrating environmental data, satellite analytics, and sociodemographic layers.",
       bullets: ["Air pollution (PM2.5) modelling", "Greenspace (EVI/NDVI) analysis", "Environmental-health linkages", "Spatial statistical integration"],
-      image: "/Service_2.jpg"
+      image: "/Environmental_Modelling_1.webp"
     },
     {
       title: "Enterprise GIS & Data Systems",
       description: "Optimising spatial infrastructure for organisations requiring scalable, secure, and automated GIS environments.",
       bullets: ["ArcGIS Enterprise deployment", "Spatial database architecture", "FME automation workflows", "QA/QC & governance frameworks"],
-      image: "/Service_5.jpg"
+      image: "/Data_System_1.webp"
     },
     {
       title: "Decision Intelligence & Visualisation",
@@ -54,7 +54,7 @@ export default function ServicesPage() {
         <section className="relative overflow-hidden rounded-[40px] border border-slate-100 bg-white px-8 py-20 md:px-16 md:py-32 shadow-xl">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/Environ_1.jpg"
+              src="/Enterprise_Services_1.webp"
               alt="Strategic Spatial Intelligence"
               fill
               className="object-cover opacity-60"
@@ -183,7 +183,7 @@ export default function ServicesPage() {
         <Reveal direction="right" width="100%">
           <div className="relative aspect-square lg:aspect-video rounded-[3rem] overflow-hidden border border-slate-100 shadow-2xl group">
             <Image
-              src="/Environ_9.jpg"
+              src="/Plateform_1.webp"
               alt="Technical Capability"
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-110"

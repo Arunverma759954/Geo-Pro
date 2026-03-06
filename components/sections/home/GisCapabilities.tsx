@@ -7,21 +7,21 @@ export default function GisCapabilities() {
             title: "Data Ingestion & Management",
             description:
                 "Seamless integration of multi-source spatial datasets with quality assurance and validation.",
-            image: "/Infra_4.jpg",
+            image: "/Data_1.webp",
             tag: "Spatial Data",
         },
         {
             title: "Spatial Modeling & Analysis",
             description:
                 "Advanced geospatial algorithms for pattern recognition, forecasting, and optimization.",
-            image: "/Service_3.jpg",
+            image: "/Spatial_Modeling_1.webp",
             tag: "Analytics",
         },
         {
             title: "Interactive Map Services",
             description:
                 "Web-based mapping interfaces with real-time updates, filtering, and deep analytics.",
-            image: "/Home_2.jpg",
+            image: "/Interective_Map_Services_1.webp",
             tag: "Visualization",
         },
 
