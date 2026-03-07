@@ -197,24 +197,6 @@ export default function ServicesPage() {
           </div>
         </Reveal>
       </section>
-
-      {/* Case Studies Placeholder */}
-      <Reveal direction="up" width="100%">
-        <section className="text-center py-20 border-y border-slate-100 space-y-12 group">
-          <div className="space-y-6">
-            <h2 className="text-4xl font-black text-slate-900 tracking-tight sm:text-5xl italic opacity-5 shadow-sm select-none">Case Studies</h2>
-            <p className="text-slate-400 font-black tracking-widest">PROPRIETARY ANALYSIS • DATA ADVISORY • TECHNICAL STRATEGY</p>
-          </div>
-          <div className="flex justify-center flex-wrap gap-4">
-            <Link
-              href="/contact"
-              className="rounded-full bg-[#16a34a] px-12 py-5 text-sm font-black text-white shadow-xl transition-all hover:bg-[#166534] hover:scale-105"
-            >
-              Request Full Capability Statement
-            </Link>
-          </div>
-        </section>
-      </Reveal>
     </div>
   );
 }
