@@ -108,11 +108,11 @@ export default function Header() {
 
         <div className="hidden items-center gap-4 md:flex">
           {/* <a
-            href="tel:+919876543210"
+            href="tel:+61493597005"
             className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-1.5 text-xs font-bold text-slate-600 hover:bg-slate-50 transition-all cursor-pointer"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[#16a34a] animate-pulse" />
-            <span>+91-98765-43210</span>
+            <span>+61 493 597 005</span>
           </a> */}
 
           <Link
@@ -151,10 +151,18 @@ export default function Header() {
             })}
             <div className="mt-4 flex flex-col gap-3 border-t border-slate-100 pt-4">
               <a
-                href="tel:+919876543210"
+                href="tel:+61493597005"
                 className="flex items-center justify-center gap-3 rounded-xl border border-slate-100 bg-slate-50 py-3.5 text-xs font-black text-slate-600 cursor-pointer"
               >
-                <span>Call: +91-98765-43210</span>
+                <span>Call: +61 493 597 005</span>
+              </a>
+              <a
+                href="https://wa.me/61493597005"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 rounded-xl border border-slate-100 bg-slate-50 py-3.5 text-xs font-black text-slate-600 cursor-pointer hover:bg-green-50 hover:border-green-200"
+              >
+                <span>WhatsApp: +61 493 597 005</span>
               </a>
               <Link
                 href="/contact"

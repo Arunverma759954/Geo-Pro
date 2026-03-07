@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Reveal } from "@/components/animations/Reveal";
 
 export default function GisCapabilities() {
@@ -82,7 +83,10 @@ export default function GisCapabilities() {
                                             {cap.description}
                                         </p>
 
-                                        <button className="group/btn flex items-center gap-3 rounded-full bg-[#16a34a] px-8 py-3.5 text-sm font-bold text-white transition-all hover:bg-[#15803d] hover:shadow-[0_0_20px_rgba(22,163,74,0.3)] cursor-pointer">
+                                        <Link
+                                            href="/contact"
+                                            className="group/btn inline-flex items-center gap-3 rounded-full bg-[#16a34a] px-8 py-3.5 text-sm font-bold text-white transition-all hover:bg-[#15803d] hover:shadow-[0_0_20px_rgba(22,163,74,0.3)] cursor-pointer"
+                                        >
                                             Contact Specialist
                                             <svg
                                                 className="h-4 w-4 transition-transform group-hover/btn:translate-x-1"
@@ -97,7 +101,7 @@ export default function GisCapabilities() {
                                                     d="M14 5l7 7m0 0l-7 7m7-7H3"
                                                 />
                                             </svg>
-                                        </button>
+                                        </Link>
                                     </div>
                                 </Reveal>
                             </div>
