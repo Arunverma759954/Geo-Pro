@@ -29,7 +29,7 @@ export default function GisCapabilities() {
     ];
 
     return (
-        <section className="relative overflow-hidden py-16 sm:py-24 md:py-32 bg-[#0f172a]">
+        <section className="relative overflow-hidden py-12 sm:py-20 md:py-24 bg-[#0f172a]">
             <div className="mx-auto max-w-[1700px] px-4 sm:px-6 lg:px-12 md:px-8 relative space-y-16 lg:space-y-24">
                 {/* Header Section */}
                 <Reveal direction="left" width="100%">

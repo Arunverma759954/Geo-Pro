@@ -27,7 +27,7 @@ export default function WhoWeServe() {
     {
       title: "Public Health & Research",
       description: "Private & Commercial Enterprises: We support organisations seeking to integrate spatial intelligence into strategic planning, site selection, environmental compliance, and investment decisions.",
-image: "/Health_1.webp",
+      image: "/Health_1.webp",
     },
     {
       title: "Private & Commercial Enterprises",
@@ -38,7 +38,7 @@ image: "/Health_1.webp",
   ];
 
   return (
-    <section className="relative overflow-hidden bg-slate-900 py-20 md:py-32">
+    <section className="relative overflow-hidden bg-slate-900 py-12 md:py-20">
       <div className="mx-auto max-w-[1700px] px-4 sm:px-6 lg:px-12 md:px-8 relative z-10 space-y-12 sm:space-y-16">
         <Reveal direction="up" width="100%">
           <header className="space-y-4 text-center max-w-3xl mx-auto">

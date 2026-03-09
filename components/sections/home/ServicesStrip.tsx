@@ -1,6 +1,6 @@
 export default function ServicesStrip() {
   return (
-    <section className="py-16 sm:py-24 md:py-32 bg-white">
+    <section className="py-8 sm:py-12 md:py-16 bg-white">
       <div className="mx-auto max-w-[1700px] px-4 sm:px-6 lg:px-12 md:px-8 grid gap-8 md:grid-cols-3">
         {[
           {

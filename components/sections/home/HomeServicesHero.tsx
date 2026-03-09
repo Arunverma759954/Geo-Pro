@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HomeServicesHero() {
   return (
-    <section className="py-16 sm:py-24 md:py-32 bg-white">
+    <section className="py-10 sm:py-16 md:py-20 bg-white">
       <div className="mx-auto max-w-[1700px] px-4 sm:px-6 lg:px-12 md:px-8">
         <div className="grid gap-8 md:grid-cols-[2fr_1fr] md:items-center">
           <div className="space-y-6">

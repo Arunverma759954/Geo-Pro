@@ -75,9 +75,9 @@ export default function HomeSlider() {
                                 >
                                     Explore services
                                 </Link>
-                                <button className="rounded-full border border-white/30 bg-white/10 backdrop-blur-md px-10 py-3 text-sm font-black text-white transition-all hover:bg-white/20 hover:border-white/50 hover:scale-105 cursor-pointer">
+                                <Link href="/contact" className="rounded-full border border-white/30 bg-white/10 backdrop-blur-md px-10 py-3 text-sm font-black text-white transition-all hover:bg-white/20 hover:border-white/50 hover:scale-105 cursor-pointer">
                                     Request a Quote
-                                </button>
+                                </Link>
                             </div>
                         </Reveal>
 

@@ -29,7 +29,7 @@ export default function WhyGeoDecision() {
   ];
 
   return (
-    <section className="py-16 sm:py-24 md:py-32 bg-slate-50 transition-colors duration-500">
+    <section className="py-10 sm:py-16 md:py-20 bg-slate-50 transition-colors duration-500">
       <div className="mx-auto max-w-[1700px] px-4 sm:px-6 lg:px-12 md:px-8 space-y-12">
         <Reveal direction="left" width="100%">
           <header className="space-y-4 max-w-2xl">

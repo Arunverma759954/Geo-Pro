@@ -38,9 +38,9 @@ export default function HeroSection() {
                 >
                   Explore services
                 </Link>
-                <button className="rounded-full border border-slate-200 bg-white px-10 py-4 text-sm font-black text-slate-900 transition-all hover:bg-slate-50 hover:border-slate-300 hover:scale-105 cursor-pointer">
+                <Link href="/contact" className="rounded-full border border-slate-200 bg-white px-10 py-4 text-sm font-black text-slate-900 transition-all hover:bg-slate-50 hover:border-slate-300 hover:scale-105 cursor-pointer inline-flex items-center justify-center">
                   Request a Quote
-                </button>
+                </Link>
               </div>
             </Reveal>
 

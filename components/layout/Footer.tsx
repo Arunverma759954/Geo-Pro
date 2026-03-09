@@ -91,11 +91,7 @@ export default function Footer() {
                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 leading-none mb-1">Email</p>
                 <p className="text-sm font-bold text-white transition-colors hover:text-[#16a34a]">info@geodecisionanalytics.com</p>
               </div>
-              <div className="space-y-1">
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 leading-none mb-1">Phone / WhatsApp</p>
-                <a href="tel:+61493597005" className="text-sm font-bold text-white transition-colors hover:text-[#16a34a] block">+61 493 597 005</a>
-                <a href="https://wa.me/61493597005" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-white transition-colors hover:text-[#16a34a] block">WhatsApp</a>
-              </div>
+
               <div className="space-y-1">
                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 leading-none mb-1">HQ</p>
                 <p className="text-sm font-bold text-white uppercase tracking-wider">Brisbane, Australia</p>

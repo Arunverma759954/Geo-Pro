@@ -93,40 +93,40 @@ export default function CaseStudiesPage() {
 
     return (
         <div className="bg-white min-h-screen">
-            {/* Hero Section */}
-            <section className="relative overflow-hidden bg-white">
-                <div className="mx-auto max-w-[1700px] grid grid-cols-1 lg:grid-cols-2 gap-0">
-                    {/* Left Content */}
-                    <div className="flex flex-col justify-center px-8 py-16 md:px-16 lg:px-20 lg:py-24">
-                        <h1
-                            className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-slate-900 leading-[1.15] tracking-tight"
-                            style={{ fontFamily: "'Georgia', 'Times New Roman', serif" }}
-                        >
-                            Case Studies
-                        </h1>
-                        <p className="mt-6 text-[15px] md:text-base leading-relaxed text-slate-600 max-w-xl">
-                            Explore how GeoDecision Analytics specialists apply spatial intelligence to address complex environmental, infrastructure, and data-driven decision challenges
+            {/* Hero Section - Banner Image Style */}
+            <section className="relative overflow-hidden pt-10 pb-16 sm:pt-16 sm:pb-24 lg:pt-20 lg:pb-32">
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/12.webp"
+                        alt="Case Studies Banner"
+                        fill
+                        className="object-cover opacity-60"
+                        priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
+                </div>
+
+                <div className="relative z-10 mx-auto max-w-[1700px] px-4 sm:px-6 lg:px-12 md:px-8">
+                    <div className="max-w-3xl space-y-8">
+                        <div className="space-y-4">
+                            <p className="inline-block text-[10px] font-black uppercase tracking-[0.4em] text-[#16a34a] bg-[#16a34a]/10 px-4 py-1.5 rounded-full border border-[#16a34a]/20">
+                                Case Studies
+                            </p>
+                            <h1 className="text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl leading-[1.1]">
+                                Our <span className="text-gradient">Impact</span> Through Data
+                            </h1>
+                        </div>
+                        <p className="text-xl leading-relaxed text-slate-800 font-bold max-w-2xl">
+                            Explore how GeoDecision Analytics specialists apply spatial intelligence to address complex environmental, infrastructure, and data-driven decision challenges.
                         </p>
-                        <div className="mt-8">
+                        <div className="pt-4">
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center rounded-full bg-[#0e3d5c] px-8 py-3.5 text-[13px] font-bold uppercase tracking-wider text-white shadow-lg transition-all duration-300 hover:bg-[#0a2e47] hover:shadow-xl hover:-translate-y-0.5"
+                                className="inline-flex items-center justify-center rounded-full bg-[#16a34a] px-10 py-4 text-sm font-black text-white shadow-[0_0_25px_rgba(22,163,74,0.4)] transition-all hover:bg-[#15803d] hover:scale-105"
                             >
-                                Subscribe to Our Mailing List
+                                Contact Our Specialists
                             </Link>
                         </div>
-                    </div>
-                    {/* Right Image */}
-                    <div className="relative h-[300px] lg:h-auto min-h-[400px]">
-                        <Image
-                            src="/Home_5.jpg"
-                            alt="Satellite view of Earth"
-                            fill
-                            className="object-cover"
-                            priority
-                        />
-                        {/* Gradient overlay for smooth blend */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/30 to-transparent w-1/4 hidden lg:block" />
                     </div>
                 </div>
             </section>
@@ -137,7 +137,7 @@ export default function CaseStudiesPage() {
             </div>
 
             {/* Professional Disclaimer Section */}
-            <section className="bg-[#f8f9fa] border-y border-slate-100 py-14 overflow-hidden relative">
+            <section className="bg-[#f8f9fa] border-y border-slate-100 py-8 overflow-hidden relative">
                 {/* Decorative background element */}
                 <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-[#0e3d5c]/5 blur-3xl" />
                 <div className="absolute -left-20 -bottom-20 w-64 h-64 rounded-full bg-[#e67e22]/5 blur-3xl" />
@@ -307,7 +307,7 @@ export default function CaseStudiesPage() {
                 <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-[#16a34a]/5 blur-[100px]" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-white/5" />
 
-                <div className="mx-auto max-w-[1700px] px-8 py-20 md:px-16 md:py-28 relative z-10">
+                <div className="mx-auto max-w-[1700px] px-8 py-12 md:px-16 md:py-16 relative z-10">
                     <div className="max-w-3xl mx-auto text-center space-y-8">
                         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-5 py-2">
                             <span className="h-2 w-2 rounded-full bg-[#16a34a] animate-pulse" />
